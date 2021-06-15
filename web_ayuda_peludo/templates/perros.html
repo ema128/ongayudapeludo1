@@ -1,0 +1,34 @@
+
+{% extends "baseINDEX.html" %}
+{% load static %}
+{% block contenido %}
+<h1><b>
+                 PERROS EN ADOPCION 
+            </b> </h1>
+       
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cupiditate, minima temporibus. Saepe quas
+                accusantium pariatur sunt consectetur iste alias, <br> odio quod voluptatum vero, necessitatibus nulla
+                at veritatis ullam quaerat ducimus.
+            </p>
+        
+
+        <h3>
+            NUESTROS PERROS QUE BUSCAN FAMILIA:
+        </h3>
+        
+            <table border="1" class="tabla-centro">
+                <tr>
+                    <td><img src="{% static 'img/perro2.jpg' %}" alt="" width="200" height="200"> </td>
+                    <td><a href="{% url 'SCO' %}">Scooby Doo</a></td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/perro3.jpg' %}" alt="" width="200" height="200"></td>
+                    <td><a href="{% url 'PAT' %}">Patan</a></td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/perro4.jpg' %}" alt="" width="200" height="200"></td>
+                    <td> <a href="{% url 'COR' %}"> Coraje </a></td>
+                </tr>
+
+            </table>
+{% endblock contenido%}

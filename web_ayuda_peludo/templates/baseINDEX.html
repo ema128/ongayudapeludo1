@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>ayudaPeludo</title>
+     <link rel="stylesheet"href="{% static 'css/estilos.css' %}">
+</head>
+
+<body class="fondo">
+      <div class="link-home">
+        <a href="{% url 'INDEX' %}">
+            <p><u>HOME</u></p>
+        </a>
+    </div>
+    <div class="centro">
+       {% block contenido %}
+
+       {% endblock contenido %}
+    </div> 
+
+</body>   
+  
+      
